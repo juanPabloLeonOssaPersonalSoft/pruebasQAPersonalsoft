@@ -1,4 +1,8 @@
 package pages;
 
-public class ComponentesPage {
+import net.serenitybdd.core.pages.PageObject;
+
+public class ComponentesPage extends PageObject {
+
+
 }

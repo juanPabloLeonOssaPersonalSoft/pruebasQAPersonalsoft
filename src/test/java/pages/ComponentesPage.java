@@ -11,6 +11,10 @@ public class ComponentesPage extends PageObject {
 
     @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/a[6]")
     WebElementFacade btn_iframes_test;
+    @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/a[2]")
+    WebElementFacade btn_form_test;
+    @FindBy(xpath = "/html/body/form/table/tbody/tr[2]/td[2]/input")
+            WebElementFacade campo_form_test;
     WebDriver webDriver;
 
     public ComponentesPage(WebDriver driver){
@@ -20,6 +24,14 @@ public class ComponentesPage extends PageObject {
 
     public  void clic_btn_iframes_test(){
         btn_iframes_test.click();
+    }
+
+    public void clic_btn_form_test(){
+        btn_form_test.click();
+    }
+
+    public void encontrar_campo_form(){
+        campo_form_test.findBy("/html/body/form/table/tbody/tr[2]/td[2]/input");
     }
 
 }

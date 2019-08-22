@@ -25,4 +25,10 @@ public class ComponentesStep extends ScenarioSteps {
         componentesPage.clic_btn_iframes_test();
 
     }
+
+    @Step
+    public void clic_en_elemento_Show_MOdal_test(){
+        componentesPage.clic_btn_Show_Modal_test();
+
+    }
 }

@@ -39,8 +39,7 @@ public class ComponentesStep extends ScenarioSteps {
         public void clic_en_elemento_AlertTest_test () {
             componentesPage.clic_btn_AlertTest_test();
         }
-    }
-    }
+
 
     @Step
     public void clic_en_elemento_Show_MOdal_test(){

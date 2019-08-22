@@ -22,7 +22,7 @@ public class ComponentesDefinition {
     }
 
     @When("ingreso a la seccion Show Modal test")
-    public void ingreso_a_la_seccion_Show_Modal_test()  { componentesStep.clic_en_elemento_Show_MOdal_test(       );
+    public void ingreso_a_la_seccion_Show_Modal_test(){ componentesStep.clic_en_elemento_Show_MOdal_test();
     }
 
     @When("ingreso a la seccion de form test")

@@ -20,9 +20,11 @@ public class ComponentesPage extends PageObject {
     @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/a[10]")
     WebElementFacade btn_AlertTest_test;
 
-    public ComponentesPage(WebDriver driver) {
     @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/a[10]")
     WebElementFacade btn_Show_Modal_test;
+
+
+
 
     public ComponentesPage(WebDriver driver){
         super(driver);

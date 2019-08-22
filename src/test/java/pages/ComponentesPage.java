@@ -13,6 +13,9 @@ public class ComponentesPage extends PageObject {
     WebElementFacade btn_iframes_test;
     WebDriver webDriver;
 
+    @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/a[10]")
+    WebElementFacade btn_Show_Modal_test;
+
     public ComponentesPage(WebDriver driver){
         super(driver);
         this.webDriver=driver;
@@ -22,4 +25,5 @@ public class ComponentesPage extends PageObject {
         btn_iframes_test.click();
     }
 
+    public void clic_btn_Show_Modal_test() { btn_Show_Modal_test.click();  }
 }

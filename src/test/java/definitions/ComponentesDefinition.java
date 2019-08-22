@@ -17,7 +17,10 @@ public class ComponentesDefinition {
     }
 
     @When("ingreso a la seccion iframes test")
-    public void ingreso_a_la_seccion_iframes_test(){
-        componentesStep.clic_en_elemento_iframes_test();
+    public void ingreso_a_la_seccion_iframes_test()  { componentesStep.clic_en_elemento_iframes_test();
+    }
+
+    @When("ingreso a la seccion Show Modal test")
+    public void ingreso_a_la_seccion_Show_Modal_test()  { componentesStep.clic_en_elemento_Show_MOdal_test(       );
     }
 }

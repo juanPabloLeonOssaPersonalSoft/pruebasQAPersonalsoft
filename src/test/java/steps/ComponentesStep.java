@@ -21,9 +21,15 @@ public class ComponentesStep extends ScenarioSteps {
 
 
     @Step
-    public void clic_en_elemento_iframes_test(){
+    public void clic_en_elemento_iframes_test() {
         componentesPage.clic_btn_iframes_test();
+    }
 
+        @Step
+        public void clic_en_elemento_AlertTest_test () {
+            componentesPage.clic_btn_AlertTest_test();
+        }
+    }
     }
 
     @Step
@@ -32,3 +38,4 @@ public class ComponentesStep extends ScenarioSteps {
 
     }
 }
+

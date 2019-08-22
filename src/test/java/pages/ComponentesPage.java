@@ -14,16 +14,27 @@ public class ComponentesPage extends PageObject {
     WebDriver webDriver;
 
     @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/a[10]")
+    WebElementFacade btn_AlertTest_test;
+
+    public ComponentesPage(WebDriver driver) {
+    @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/a[10]")
     WebElementFacade btn_Show_Modal_test;
 
     public ComponentesPage(WebDriver driver){
         super(driver);
-        this.webDriver=driver;
+        this.webDriver = driver;
     }
 
-    public  void clic_btn_iframes_test(){
+    public void clic_btn_iframes_test() {
         btn_iframes_test.click();
+    }
+    public  void clic_btn_AlertTest_test(){
+        btn_AlertTest_test.click();
     }
 
     public void clic_btn_Show_Modal_test() { btn_Show_Modal_test.click();  }
 }
+
+
+
+

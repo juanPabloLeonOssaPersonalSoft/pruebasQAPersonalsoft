@@ -23,6 +23,10 @@ public class ComponentesStep extends ScenarioSteps {
     @Step
     public void clic_en_elemento_iframes_test(){
         componentesPage.clic_btn_iframes_test();
+    }
 
+    @Step
+    public void clic_en_elemento_saveastest(){
+        componentesPage.clic_btn_saveastest();
     }
 }

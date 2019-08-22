@@ -13,11 +13,19 @@ public class ComponentesDefinition {
 
     @Given("usuario del portal de pruebas")
     public void  given_usuario_del_portal_deprueba(){
+
         componentesStep.abriPortal();
     }
+
 
     @When("ingreso a la seccion iframes test")
     public void ingreso_a_la_seccion_iframes_test(){
         componentesStep.clic_en_elemento_iframes_test();
     }
+
+    @When("ingreso a la seccion SAVE AS TEST")
+    public void ingreso_a_la_seccion_saveastest(){
+        componentesStep.clic_en_elemento_saveastest();
+    }
+
 }

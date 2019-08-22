@@ -13,13 +13,23 @@ public class ComponentesPage extends PageObject {
     WebElementFacade btn_iframes_test;
     WebDriver webDriver;
 
-    public ComponentesPage(WebDriver driver){
+    @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/a[10]")
+    WebElementFacade btn_AlertTest_test;
+
+    public ComponentesPage(WebDriver driver) {
         super(driver);
-        this.webDriver=driver;
+        this.webDriver = driver;
     }
 
-    public  void clic_btn_iframes_test(){
+    public void clic_btn_iframes_test() {
         btn_iframes_test.click();
+    }
+    public  void clic_btn_AlertTest_test(){
+        btn_AlertTest_test.click();
     }
 
 }
+
+
+
+

@@ -33,7 +33,3 @@ Scenario: escenario para dar clic en el boton de Show Modal test
     Then ver la informacion de la seccion
 
 
-Scenario: escenario para dar clic en el boton de Alert Test
-        Given usuario del portal de pruebas
-        When ingreso a la seccion Alert Test
-        Then ver la informacion de la seccion

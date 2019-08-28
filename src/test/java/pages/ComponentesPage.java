@@ -20,7 +20,7 @@ public class ComponentesPage extends PageObject {
     WebElementFacade btn_saveastest;
 
 
-    @FindBy(xpath = "/html/body/table/tbody/tr/td[3]/a[1]]")
+    @FindBy(xpath = "/html/body/table/tbody/tr/td[3]/a[1]")
     WebElementFacade btn_AlertTest_test;
 
     WebDriver webDriver;

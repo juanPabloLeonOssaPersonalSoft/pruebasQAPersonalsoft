@@ -11,6 +11,10 @@ public class ComponentesPage extends PageObject {
 
     @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/a[6]")
     WebElementFacade btn_iframes_test;
+
+    @FindBy(xpath = "/html/body/table/tbody/tr/td[3]/a[1]]")
+    WebElementFacade btn_AlertTest_test;
+
     WebDriver webDriver;
 
     public ComponentesPage(WebDriver driver){
@@ -22,4 +26,10 @@ public class ComponentesPage extends PageObject {
         btn_iframes_test.click();
     }
 
+
+    public  void clic_btn_AlertTest_test(){
+        btn_AlertTest_test.click();
+    }
+
 }
+

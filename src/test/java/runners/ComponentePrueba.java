@@ -1,3 +1,4 @@
+
 package runners;
 
 import cucumber.api.CucumberOptions;
@@ -6,8 +7,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-    features = "src/test/resources/features/ComponentesPrueba.feature",
-    glue = "definitions"
+        features = "src/test/resources/features/ComponentesPrueba.feature",
+        glue = "definitions"
 
 )
 public class ComponentePrueba {

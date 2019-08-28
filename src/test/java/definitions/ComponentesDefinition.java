@@ -18,6 +18,12 @@ public class ComponentesDefinition {
 
     @When("ingreso a la seccion iframes test")
     public void ingreso_a_la_seccion_iframes_test(){
-        componentesStep.clic_en_elemento_iframes_test();
+        componentesStep.clic_en_elemento_iframes_test();}
+
+    @When("ingreso a la seccion  Alert Test")
+    public void ingreso_a_la_seccion_alert_test(){
+    componentesStep.clic_en_elemento_AlertTest_test();
     }
+
 }
+

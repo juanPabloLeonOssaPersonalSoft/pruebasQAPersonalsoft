@@ -19,10 +19,11 @@ public class ComponentesPage extends PageObject {
     @FindBy(xpath = "/html/body/table/tbody/tr/td[3]/a[5]")
     WebElementFacade btn_saveastest;
 
-    WebDriver webDriver;
 
-    @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/a[10]")
+    @FindBy(xpath = "/html/body/table/tbody/tr/td[3]/a[1]")
     WebElementFacade btn_AlertTest_test;
+
+    WebDriver webDriver;
 
     @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/a[10]")
     WebElementFacade btn_Show_Modal_test;
@@ -32,15 +33,11 @@ public class ComponentesPage extends PageObject {
 
     public ComponentesPage(WebDriver driver){
         super(driver);
-        this.webDriver = driver;
+        this.webDriver=driver;
     }
 
     public  void clic_btn_iframes_test(){
-
         btn_iframes_test.click();
-    }
-    public  void clic_btn_AlertTest_test(){
-        btn_AlertTest_test.click();
     }
 
     public void clic_btn_form_test(){
@@ -55,8 +52,15 @@ public class ComponentesPage extends PageObject {
         campo_form_test.findBy("/html/body/form/table/tbody/tr[2]/td[2]/input");
     }
 
+    public  void clic_btn_AlertTest_test(){
+        btn_AlertTest_test.click();
+    }
+
     public void clic_btn_Show_Modal_test(){ btn_Show_Modal_test.click();  }
 }
+
+
+
 
 
 

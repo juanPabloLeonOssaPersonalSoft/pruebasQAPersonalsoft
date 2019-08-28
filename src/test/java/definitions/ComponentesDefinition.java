@@ -14,17 +14,23 @@ public class ComponentesDefinition {
 
     @Given("usuario del portal de pruebas")
     public void  given_usuario_del_portal_deprueba(){
-
         componentesStep.abriPortal();
     }
 
 
-    @When("ingreso a la seccion iframes test")
-    public void ingreso_a_la_seccion_iframes_test()  { componentesStep.clic_en_elemento_iframes_test();
-    }
 
     @When("ingreso a la seccion Show Modal test")
-    public void ingreso_a_la_seccion_Show_Modal_test(){ componentesStep.clic_en_elemento_Show_MOdal_test();
+    public void ingreso_a_la_seccion_Show_Modal_test(){
+        componentesStep.clic_en_elemento_Show_MOdal_test();
+    }
+
+    public void ingreso_a_la_seccion_iframes_test(){
+        componentesStep.clic_en_elemento_iframes_test();
+    }
+
+    @When("ingreso a la seccion  Alert Test")
+    public void ingreso_a_la_seccion_alert_test(){
+    componentesStep.clic_en_elemento_AlertTest_test();
     }
 
     @When("ingreso a la seccion de form test")

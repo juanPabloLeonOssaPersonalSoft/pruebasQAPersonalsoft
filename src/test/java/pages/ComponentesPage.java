@@ -11,11 +11,25 @@ public class ComponentesPage extends PageObject {
 
     @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/a[6]")
     WebElementFacade btn_iframes_test;
+    @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/a[2]")
+    WebElementFacade btn_form_test;
+    @FindBy(xpath = "/html/body/form/table/tbody/tr[2]/td[2]/input")
+            WebElementFacade campo_form_test;
+
+    @FindBy(xpath = "/html/body/table/tbody/tr/td[3]/a[5]")
+    WebElementFacade btn_saveastest;
+
 
     @FindBy(xpath = "/html/body/table/tbody/tr/td[3]/a[1]]")
     WebElementFacade btn_AlertTest_test;
 
     WebDriver webDriver;
+
+    @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/a[10]")
+    WebElementFacade btn_Show_Modal_test;
+
+
+
 
     public ComponentesPage(WebDriver driver){
         super(driver);
@@ -26,10 +40,28 @@ public class ComponentesPage extends PageObject {
         btn_iframes_test.click();
     }
 
+    public void clic_btn_form_test(){
+        btn_form_test.click();
+    }
+    public void clic_btn_saveastest(){
+        btn_saveastest.click();
+    }
+
+
+    public void encontrar_campo_form(){
+        campo_form_test.findBy("/html/body/form/table/tbody/tr[2]/td[2]/input");
+    }
 
     public  void clic_btn_AlertTest_test(){
         btn_AlertTest_test.click();
     }
 
+    public void clic_btn_Show_Modal_test(){ btn_Show_Modal_test.click();  }
 }
+
+
+
+
+
+
 
